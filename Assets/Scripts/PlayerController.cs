@@ -40,14 +40,13 @@ public class PlayerController : MonoBehaviour {
             other.gameObject.SetActive(false);
             count++;
             SetCountText();
-            Debug.Log("Pick Up");
         }
         if(other.gameObject.CompareTag("J"))
         {
             Vector3 Player_Velocity = rb.velocity;
 
             rb.velocity += new Vector3(0, 8, 0); 
-            Debug.Log(rb.velocity);
+         
         }
              
     }
